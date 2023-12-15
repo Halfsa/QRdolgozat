@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QRdolgozat</string>
+    <string name="scan">SCAN</string>
+    <string name="listazas">LISTÁZÁS</string>
+</resources>

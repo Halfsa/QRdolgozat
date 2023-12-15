@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ListaAdatok">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:visibility="gone"
+            android:id="@+id/etId"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Név"
+            android:textSize="25sp"
+            android:id="@+id/etNev"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jegy"
+            android:textSize="25sp"
+            android:id="@+id/etJegy"/>
+        <Button
+            android:id="@+id/buttonModify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Módosítás"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mégse"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tanuloList"
+        tools:listitem="@layout/person_list_adapter"/>
+
+
+</LinearLayout>
